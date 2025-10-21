@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact ABI Home Inspections</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ledger&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/"><img src="images/abi-logo-white.png" alt="ABI Home Inspections Logo"
+                    class="logo"></a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="main-menu">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="main-menu" class="navbar-menu">
+            <div class="navbar-start">
+            </div>
+            <div class="navbar-start">
+                <a class="navbar-item" href="about.html">About Us</a>
+                <a class="navbar-item" href="agents.html">For Agents</a>
+                <a class="navbar-item" href="contact.html">Contact</a>
+                <a class="navbar-item" href="sample-report.html">Sample Report</a>
+                <a class="navbar-item" href="service-locations.html">Service Locations</a>
+                <a class="navbar-item" href="faqs.html">FAQs</a>
+            </div>
+            <div class="navbar-start">
+
+            </div>
+            <div class="navbar-end">
+                <a class="navbar-item is-size-4 phone-link" href="tel:+18047244468">
+                    <span class="icon is-small"><i class="fas fa-phone"></i></span>
+                    (804) 724-4468
+                </a>
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button navbar-cta" href="contact.html"><strong>Schedule an Appointment</strong></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section is-secondary contact-section">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-10 has-text-centered">
+                    <h1 class="title is-1 mb-6">Contact ABI Home Inspections</h1>
+                    <p class="is-size-5 mb-5">Please fill out the form below to schedule an appointment or ask any questions you
+                        may have. There is no obligation to book a service by reaching out to us. We look forward to
+                        assisting you with your home inspection needs!</p>
+                </div>
+            </div>
+            <div class="columns is-centered">
+                <!-- Main form column -->
+                <div class="column is-7-desktop is-12-tablet mb-2">
+                    <form class="box" action="#" method="POST" autocomplete="on">
+                        <div class="columns is-multiline">
+                            <div class="column is-6">
+                                <div class="field">
+                                    <label class="label" for="first-name">First Name</label>
+                                    <div class="control">
+                                        <input class="input" type="text" id="first-name" name="first-name" required
+                                            placeholder="First Name">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column is-6">
+                                <div class="field">
+                                    <label class="label" for="last-name">Last Name</label>
+                                    <div class="control">
+                                        <input class="input" type="text" id="last-name" name="last-name" required
+                                            placeholder="Last Name">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column is-6">
+                                <div class="field">
+                                    <label class="label" for="email">Email</label>
+                                    <div class="control has-icons-left">
+                                        <input class="input" type="email" id="email" name="email" required
+                                            placeholder="your@email.com">
+                                        <span class="icon is-small is-left">
+                                            <i class="fas fa-envelope"></i>
+                                        </span>
+                                    </div>
+                                    <p class="help is-danger" id="emailHelp" style="display:none;">Please enter a valid
+                                        email address.</p>
+                                </div>
+                            </div>
+                            <div class="column is-6">
+                                <div class="field">
+                                    <label class="label" for="phone">Phone Number</label>
+                                    <div class="control has-icons-left">
+                                        <input class="input" type="tel" id="phone" name="phone" required
+                                            placeholder="(555) 555-5555"
+                                            pattern="^(\+?\d{1,2}\s?)?(\(?\d{3}\)?[\s.-]?)?\d{3}[\s.-]?\d{4}$">
+                                        <span class="icon is-small is-left">
+                                            <i class="fas fa-phone"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column is-12">
+                                <div class="field">
+                                    <label class="label" for="address">Property Address</label>
+                                    <div class="control has-icons-left">
+                                        <input class="input" type="text" id="address" name="address" required
+                                            placeholder="123 Main St, City, State">
+                                        <span class="icon is-small is-left">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column is-6">
+                                <div class="field">
+                                    <label class="label" for="date">Desired Appointment Date</label>
+                                    <div class="control">
+                                        <input class="input" type="date" id="date" name="date" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column is-6">
+                                <div class="field">
+                                    <label class="label" for="time">Desired Appointment Time</label>
+                                    <div class="control has-icons-left">
+                                        <input class="input" type="time" id="time" name="time" required>
+                                        <span class="icon is-small is-left">
+                                            <i class="fas fa-clock"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column is-12">
+                                <div class="field">
+                                    <label class="label" for="info">Additional Information</label>
+                                    <div class="control">
+                                        <textarea class="textarea" id="info" name="info" rows="4"
+                                            placeholder="Let us know anything else about your inspection needs..."></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Services checkboxes -->
+                            <div class="column is-12">
+                                <div class="field">
+                                    <label class="label">Which services are you interested in?</label>
+                                    <div class="control">
+                                        <label class="checkbox mr-4 my-3">
+                                            <input type="checkbox" name="services" value="General Home Inspection">
+                                            General Home Inspection
+                                        </label>
+                                        <label class="checkbox mr-4 my-3">
+                                            <input type="checkbox" name="services" value="Radon Testing">
+                                            Radon Testing
+                                        </label>
+                                        <label class="checkbox mr-4 my-3">
+                                            <input type="checkbox" name="services" value="Well Water Testing">
+                                            Well Water Testing
+                                        </label>
+                                        <label class="checkbox mr-4 my-3">
+                                            <input type="checkbox" name="services" value="Infrared Capabilities">
+                                            Infrared Capabilities
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="services" value="Other">
+                                            Other
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field is-grouped is-justify-content-center">
+                            <div class="control">
+                                <button type="submit" class="button is-primary">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="column is-1-desktop is-hidden-mobile"></div>
+                <div class="column is-3-desktop is-12-tablet">
+                    <!-- Chat/Contact column -->
+                    <div class="column is-12-desktop is-12-tablet">
+                        <div class="contact-chat-col">
+                            <h2 class="title is-5 mb-4">Chat with us</h2>
+                            <p class="mb-3">Contact or follow ABI on social media.</p>
+                            <div class="mb-2">
+                                <span class="icon has-text-primary mr-1"><i class="fas fa-envelope"></i></span>
+                                <a href="mailto:slewis@abivirginia.com">Send us an email</a>
+                            </div>
+                            <div class="mb-2">
+                                <span class="icon has-text-primary mr-1"><i
+                                        class="fab fa-facebook-messenger"></i></span>
+                                <a href="https://facebook.com/" target="_blank">Message us on Facebook</a>
+                            </div>
+                            <div class="mb-4">
+                                <span class="icon has-text-primary mr-1"><i class="fab fa-instagram"></i></span>
+                                <a href="https://instagram.com/" target="_blank">Follow us on Instagram</a>
+                            </div>
+                            <h2 class="title is-5 mt-5 mb-3">Call us</h2>
+                            <p class="mb-2">Call our team Mon-Sat 8am to 5pm.</p>
+                            <div>
+                                <span class="icon has-text-primary mr-1"><i class="fas fa-phone"></i></span>
+                                <a href="tel:+18047244468">(804) 724-4468</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Footer -->
+	<section class="footer is-max-desktop">
+		<div class="container">
+			<div class="columns is-multiline">
+				<!-- Logo & Tagline -->
+				<div class="column is-3">
+					<a href="/"><img src="images/abi-logo-white.png" alt="ABI Home Inspections Logo"
+							class="logo mb-2"></a>
+					<div class="has-text-white has-text-weight-bold mt-2">ABI Home Inspections, Inc.</div>
+					<div class="has-text-white is-size-7 mt-2">
+						Providing Quality Inspections and Testing to the Tri-River Peninsula Area of Virginia since
+						2015.
+					</div>
+				</div>
+				<!-- Browse -->
+				<div class="column is-2">
+					<div class="has-text-white has-text-weight-bold mb-2">Browse</div>
+					<ul class="footer-links">
+						<li><a class="has-text-white" href="about.html">About Us</a></li>
+						<li><a class="has-text-white" href="agents.html">For Agents</a></li>
+						<li><a class="has-text-white" href="contact.html">Contact</a></li>
+						<li><a class="has-text-white" href="sample-report.pdf" target="_blank">Sample Report</a></li>
+						<li><a class="has-text-white" href="service-locations.html">Service Locations</a></li>
+						<li><a class="has-text-white" href="faqs.html">FAQs</a></li>
+					</ul>
+				</div>
+				<!-- Services -->
+				<div class="column is-2">
+					<div class="has-text-white has-text-weight-bold mb-2">Services</div>
+					<ul class="footer-links">
+						<li><a class="has-text-white" href="#">General Home Inspection</a></li>
+						<li><a class="has-text-white" href="#">Radon Testing</a></li>
+						<li><a class="has-text-white" href="#">Well Water Testing</a></li>
+						<li><a class="has-text-white" href="#">Infrared Capabilities</a></li>
+					</ul>
+				</div>
+				<!-- Contact -->
+				<div class="column is-3"> <!-- TODO: Fix Column Width -->
+					<div class="has-text-white has-text-weight-bold mb-2">Contact</div>
+					<ul class="footer-links">
+						<li>
+							<span class="icon is-small has-text-white"><i class="fas fa-map-marker-alt"></i></span>
+							<span class="ml-1 has-text-white">PO Box 244, Lively, VA 22507</span>
+						</li>
+						<li>
+							<span class="icon is-small has-text-white"><i class="fas fa-phone"></i></span>
+							<a class="has-text-white ml-1" href="tel:+18047244468">(804) 724-4468</a>
+						</li>
+						<li>
+							<span class="icon is-small has-text-white"><i class="fas fa-envelope"></i></span>
+							<a class="has-text-white ml-1"
+								href="mailto:slewis@abivirginia.com">slewis@abivirginia.com</a>
+						</li>
+						<li class="mt-2">
+							<a href="https://facebook.com/" target="_blank" class="footer-social mr-2"><i
+									class="fab fa-facebook-f"></i></a>
+							<a href="https://instagram.com/" target="_blank" class="footer-social"><i
+									class="fab fa-instagram"></i></a>
+						</li>
+					</ul>
+				</div>
+				<!-- ASHI Footer -->
+				<div class="column is-2 has-text-white">
+					<div class="has-text-centered ml-6 mr-6 p-2 ashi-footer">
+						<a href="https://www.homeinspector.org/certification/ashi-certified-inspector/" target="_blank"
+							rel="noopener noreferrer">
+							<img src="https://www.homeinspector.org/wp-content/uploads/2024/04/logo.svg"
+								alt="ASHI Logo">
+						</a>
+						<p>CERTIFIED INSPECTOR</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer has-background-black py-2" style="border-top: 1px solid #222;">
+		<div class="container">
+			<div class="columns is-mobile is-vcentered">
+				<div class="column has-text-left has-text-white is-size-7">
+					ABI Incorporated © 2025
+				</div>
+				<div class="column has-text-right">
+					<a href="privacy-policy.html" class="has-text-white is-size-7">Privacy Policy</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>
