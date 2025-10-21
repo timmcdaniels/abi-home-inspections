@@ -1,0 +1,42 @@
+{
+    "name": "hero",
+    "title": "Hero",
+    "active": true,
+    "description": "",
+    "category": "common",
+    "icon": "",
+    "keywords": [],
+    "post_types": [
+        "page"
+    ],
+    "mode": "preview",
+    "align": "full",
+    "align_text": "",
+    "align_content": "top",
+    "render_template": "acf-blocks\/hero\/index.php",
+    "render_callback": "",
+    "enqueue_style": "build\/style-app.css",
+    "enqueue_script": "",
+    "enqueue_assets": "",
+    "supports": {
+        "anchor": true,
+        "align": [
+            "left",
+            "center",
+            "right",
+            "wide",
+            "full"
+        ],
+        "align_text": true,
+        "align_content": false,
+        "full_height": false,
+        "mode": true,
+        "multiple": true,
+        "example": [],
+        "jsx": false
+    },
+    "acfe_autosync": [
+        "json"
+    ],
+    "modified": 1758769052
+}

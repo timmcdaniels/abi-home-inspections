@@ -1,0 +1,26 @@
+$primary: #006699;
+$primary-hover: #004f80;
+@import "bulma/bulma";
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css";
+
+@import "breakpoints/small-up";
+
+// 768px max
+@media screen and (max-width: 47.9375em) {
+    @import "breakpoints/small-only";
+}
+
+// 769px +
+@media screen and (min-width: 48em) {
+    @import "breakpoints/medium-up";
+}
+
+// 769px - 1350px
+@media screen and (min-width: 48em) and (max-width: 84.375em) {
+    @import "breakpoints/medium-only";
+}
+
+// 1351px +
+@media screen and (min-width: 84.4375em) {
+    @import "breakpoints/large-up";
+}

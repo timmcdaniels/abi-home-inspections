@@ -1,0 +1,36 @@
+{
+    "name": "promo-cards",
+    "title": "Promo Cards",
+    "active": true,
+    "description": "",
+    "category": "common",
+    "icon": "",
+    "keywords": [],
+    "post_types": [
+        "page"
+    ],
+    "mode": "preview",
+    "align": "wide",
+    "align_text": "",
+    "align_content": "top",
+    "render_template": "acf-blocks\/promo-cards\/index.php",
+    "render_callback": "",
+    "enqueue_style": "",
+    "enqueue_script": "",
+    "enqueue_assets": "",
+    "supports": {
+        "anchor": true,
+        "align": true,
+        "align_text": true,
+        "align_content": true,
+        "full_height": true,
+        "mode": true,
+        "multiple": true,
+        "example": [],
+        "jsx": false
+    },
+    "acfe_autosync": [
+        "json"
+    ],
+    "modified": 1758772173
+}
