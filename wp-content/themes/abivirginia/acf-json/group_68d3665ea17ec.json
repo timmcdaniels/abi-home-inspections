@@ -32,7 +32,7 @@
             "preview_size": "medium"
         },
         {
-            "key": "field_6923c331891ee",
+            "key": "field_69246c3a934be",
             "label": "Image Ratio",
             "name": "image_ratio",
             "aria-label": "",
@@ -56,7 +56,6 @@
             "max": "",
             "prepend": "",
             "append": "",
-            "required_message": "",
             "allow_null": 0,
             "allow_in_bindings": 0,
             "ui": 0,
@@ -162,7 +161,6 @@
                 "id": ""
             },
             "default_value": "",
-            "acfe_wysiwyg_auto_init": 0,
             "acfe_wysiwyg_height": 300,
             "acfe_wysiwyg_max_height": "",
             "acfe_wysiwyg_valid_elements": "",
@@ -175,11 +173,13 @@
             "acfe_wysiwyg_transparent": 0,
             "acfe_wysiwyg_merge_toolbar": 0,
             "acfe_wysiwyg_custom_toolbar": 0,
+            "required_message": "",
             "allow_in_bindings": 0,
             "tabs": "visual",
             "toolbar": "basic",
             "media_upload": 0,
             "delay": 0,
+            "acfe_wysiwyg_auto_init": 0,
             "acfe_wysiwyg_min_height": 300,
             "acfe_wysiwyg_toolbar_buttons": []
         },
@@ -392,8 +392,7 @@
         "json"
     ],
     "acfe_form": 0,
-    "acfe_display_title": "",
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1763951670
+    "modified": 1763994716
 }
