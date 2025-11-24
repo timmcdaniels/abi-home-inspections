@@ -546,8 +546,10 @@ ul.list-two-cols {
 }
 
 .for-agents-report-icon {
-  font-size: 13rem;
   color: #006699;
+  font-size: 12rem;
+  position: relative;
+  left: 15px;
 }
 
 .for-agents-report-column {
@@ -557,8 +559,11 @@ ul.list-two-cols {
 .for-agents-report-icon-circle {
   background: rgba(0, 102, 153, 0.198);
   border-radius: 50%;
-  padding: 2.5rem;
-  display: inline-block;
+  width: 350px !important;
+  height: 350px !important;
+  display: flex; /* Optional: for centering content if any */
+  align-items: center;
+  justify-content: center;
 }
 
 .report-vertical-line {
