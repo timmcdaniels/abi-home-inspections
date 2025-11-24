@@ -32,6 +32,43 @@
             "preview_size": "medium"
         },
         {
+            "key": "field_6923c331891ee",
+            "label": "Image Ratio",
+            "name": "image_ratio",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "is-3by2": "3:2",
+                "is-4by3": "4:3",
+                "is-5by4": "5:4"
+            },
+            "default_value": "is-3by2",
+            "return_format": "value",
+            "multiple": 0,
+            "max": "",
+            "prepend": "",
+            "append": "",
+            "required_message": "",
+            "allow_null": 0,
+            "allow_in_bindings": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "create_options": 0,
+            "save_options": 0,
+            "allow_custom": 0,
+            "search_placeholder": "",
+            "min": ""
+        },
+        {
             "key": "field_68d74db7ab278",
             "label": "Use Blue Background Behind Image?",
             "name": "use_blue_background",
@@ -350,6 +387,7 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
+    "display_title": "",
     "acfe_autosync": [
         "json"
     ],
@@ -357,5 +395,5 @@
     "acfe_display_title": "",
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1759030629
+    "modified": 1763951670
 }
