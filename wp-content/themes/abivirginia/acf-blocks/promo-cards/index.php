@@ -22,7 +22,7 @@
 				<?php foreach ( $cards as $c ): ?>
                 <div class="column <?php if ( $cols == 4 ): ?>is-3-desktop <?php elseif ( $cols == 3 ): ?>is-4-desktop <?php else: ?>is-6-desktop <?php endif; ?> is-6-tablet">
                     <div class="service-card card has-text-centered">
-						<?php if ( ! empty( $c['card']['url'] ) ): ?><a href="<?php echo $c['card']['url']; ?>"><?php endif; ?>
+						<?php if ( ! empty( $c['card']['url'] ) && ! $is_preview ): ?><a href="<?php echo $c['card']['url']; ?>"><?php endif; ?>
                         <div class="card-content">
                             <span class="icon is-large mb-3">
                                 <i class="fas <?php echo $c['card']['icon']; ?> fa-2x"></i>
@@ -30,7 +30,7 @@
                             <p class="title is-5 mb-2"><?php echo $c['card']['title']; ?></p>
                             <p class="content is-size-6"><?php echo $c['card']['description']; ?></p>
                         </div>
-						<?php if ( ! empty( $c['card']['url'] ) ): ?></a><?php endif; ?>
+						<?php if ( ! empty( $c['card']['url'] ) && ! $is_preview ): ?></a><?php endif; ?>
                     </div>
                 </div>
 				<?php endforeach; ?>
