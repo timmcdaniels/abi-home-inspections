@@ -11,7 +11,7 @@
 
     <!-- Sample Report Section -->
     <section class="section agent-sample-report-section is-secondary">
-        <div class="container">
+        <div class="container" id="<?php echo esc_attr( $block['anchor'] ); ?>">
             <h2 class="title is-3 has-text-centered mb-6"><?php echo $heading; ?></h2>
             <div class="columns is-vcentered">
 				<?php if ( $icon_location === 'Left' && ! empty( $icon ) ): ?>

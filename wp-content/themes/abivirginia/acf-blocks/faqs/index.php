@@ -5,7 +5,7 @@
 	$buttons = get_field( 'buttons' );
 ?>
 	<section class="section">
-		<div class="container">
+		<div class="container" id="<?php echo esc_attr( $block['anchor'] ); ?>">
 			<div class="columns is-centered">
 				<div class="column is-8 has-text-centered">
 					<h2 class="title is-3 <?php if ( $description ): ?>mb-3<?php else: ?>mb-6<?php endif; ?>"><?php echo $heading; ?></h2>

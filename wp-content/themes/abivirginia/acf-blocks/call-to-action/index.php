@@ -6,7 +6,7 @@
 ?>
 
     <section class="section agent-sample-report-section is-secondary">
-        <div class="container">
+        <div class="container" id="<?php echo esc_attr( $block['anchor'] ); ?>">
 			<div class="has-text-centered mt-6">
                 <h2 class="title mb-4"><?php echo $heading; ?></h2>
                 <div class="columns is-centered is-vcentered mb-3">

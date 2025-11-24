@@ -11,7 +11,7 @@
 	$buttons = get_field( 'buttons' );
 ?>
 	<section class="section">
-		<div class="container">
+		<div class="container" id="<?php echo esc_attr( $block['anchor'] ); ?>">
 			<div class="columns is-vcentered">
 				<?php if ( $image_location === 'Left' && ! empty( $image ) ): ?>
 				<div class="column is-6">

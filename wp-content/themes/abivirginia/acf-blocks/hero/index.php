@@ -15,7 +15,7 @@
 	}
 ?>
 	<!-- Hero Section -->
-	<div class="hero <?php echo $class; ?>" style="<?php echo $style; ?>">
+	<div class="hero <?php echo $class; ?>" style="<?php echo $style; ?>" id="<?php echo esc_attr( $block['anchor'] ); ?>">
 		<div class="hero-head"></div>
 		<div class="hero-body">
 			<div class="container<?php if ( $type !== 'Pointed' ): ?> is-fullhd<?php endif; ?>">
