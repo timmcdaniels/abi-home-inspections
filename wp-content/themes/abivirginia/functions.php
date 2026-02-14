@@ -1,5 +1,7 @@
 <?php
 
+include 'includes/json-ld.php';
+
 // get text domain but keep text domain in intl functions a string: theme-text-domain
 
 $theme = wp_get_theme();
