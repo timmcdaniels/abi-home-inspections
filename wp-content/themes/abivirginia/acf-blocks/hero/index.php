@@ -5,7 +5,7 @@
 	$desc = get_field( 'description' );
 	$buttons = get_field( 'buttons' );
 	$class = 'std-hero';
-	$style = "background: center top/cover url('" . $image . "');";
+	$style = "background: center top/cover linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('" . $image . "');";
 	if ( $type === 'Box with List & CTA' ) {
 		$class = 'is-size-6 box-list-hero';
 		$style = "background: center top/cover url('" . $image . "');";

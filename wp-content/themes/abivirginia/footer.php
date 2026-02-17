@@ -58,13 +58,13 @@
 						</li>
 						<li class="mt-2">
 							<?php if ( ! empty( $fb_url ) ): ?>
-							<a href="<?php echo $fb_url; ?>" target="_blank" rel="noopener noreferrer" class="footer-social mr-2"><i class="fab fa-facebook-f"></i></a>
+							<a href="<?php echo $fb_url; ?>" target="_blank" rel="noopener noreferrer" class="footer-social mr-2" aria-label="Visit our Facebook page"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
 							<?php endif; ?>
 							<?php if ( ! empty( $insta_url ) ): ?>
-                            <a href="<?php echo $insta_url; ?>" target="_blank" rel="noopener noreferrer" class="footer-social mr-2"><i class="fab fa-instagram"></i></a>
+                            <a href="<?php echo $insta_url; ?>" target="_blank" rel="noopener noreferrer" class="footer-social mr-2" aria-label="Visit our Instagram page"><i class="fab fa-instagram" aria-hidden="true"></i></a>
                             <?php endif; ?>
 							<?php if ( ! empty( $linkedin_url ) ): ?>
-							<a href="<?php echo $linkedin_url; ?>" target="_blank" rel="noopener noreferrer" class="footer-social mr-2"><i class="fab fa-linkedin"></i></a>
+							<a href="<?php echo $linkedin_url; ?>" target="_blank" rel="noopener noreferrer" class="footer-social mr-2" aria-label="Visit our LinkedIn page"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
 							<?php endif; ?>
 						</li>
 					</ul>
