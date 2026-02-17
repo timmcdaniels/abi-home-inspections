@@ -1,3 +1,10 @@
+:root {
+  /* Primary color using HSL values for #006699 */
+  --bulma-primary-h: 200deg;
+  --bulma-primary-s: 100%;
+  --bulma-primary-l: 30%;
+}
+
 html {
   scroll-behavior: smooth;
   color-scheme: light !important;

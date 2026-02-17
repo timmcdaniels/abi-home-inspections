@@ -183,7 +183,7 @@ function abi_buttons( $button_alignment, $buttons = array() ) {
 	if ( $button_alignment === 'Right' ) {
         $align_class = 'has-text-right';
     }
-	include( 'inc/buttons.php' );
+	include( 'includes/buttons.php' );
 }
 
 function abi_remove_p( $str ) {
