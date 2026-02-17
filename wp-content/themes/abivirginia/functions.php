@@ -105,6 +105,36 @@ function theme_wp_enqueue_scripts() {
 	}
 }
 
+// enqueue bulma and font awesome in backend
+
+add_action( 'admin_enqueue_scripts', 'theme_admin_enqueue_scripts' );
+function theme_admin_enqueue_scripts() {
+	wp_enqueue_style(
+        'font-awesome-admin', 
+        'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css', 
+        array(), 
+        '6.4.2'
+    );
+	wp_enqueue_style(
+        'bulma-admin', 
+        'https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css', 
+        array(), 
+        '1.0.4'
+    );
+}
+
+add_action('admin_head', 'abi_add_bulma_variables_to_admin');
+function abi_add_bulma_variables_to_admin() {
+    echo '<style>
+        :root {
+          /* Primary color using HSL values for #006699 */
+          --bulma-primary-h: 200deg;
+          --bulma-primary-s: 100%;
+          --bulma-primary-l: 30%;
+        }
+    </style>';
+}
+
 class ABI_Menu_Walker extends Walker_Nav_Menu {
     public function start_el(&$output, $item, $depth = 0, $args = [], $id = 0) {
 		$item->classes[] = 'navbar-item';
