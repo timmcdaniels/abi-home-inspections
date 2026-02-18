@@ -7,13 +7,6 @@ include 'includes/json-ld.php';
 $theme = wp_get_theme();
 $theme_name = $theme->get( 'TextDomain' );
 
-// licenses
-
-define( 'ACF_PRO_LICENSE', 'b3JkZXJfaWQ9NjM2MjV8dHlwZT1wZXJzb25hbHxkYXRlPTIwMTUtMDktMDYgMDA6NTc6MjM=' );
-define( 'ALM_AJAX_LOAD_MORE_PRO_LICENSE_KEY', '0a9d60ecb18558a1f8117fd3e6936abf' );
-define( 'ACP_LICENSE', 'e691d42d-e4ef-433f-b6fe-f0e5c5ad6e03' );
-define( 'GF_LICENSE_KEY', 'f93b7d51b6508110943ef2f25065df0a' );
-
 // title support
 
 add_theme_support( 'title-tag' );
@@ -107,8 +100,8 @@ function theme_wp_enqueue_scripts() {
 
 // enqueue bulma and font awesome in backend
 
-add_action( 'admin_enqueue_scripts', 'theme_admin_enqueue_scripts' );
-function theme_admin_enqueue_scripts() {
+add_action( 'enqueue_block_editor_assets', 'theme_enqueue_block_editor_assets' );
+function theme_enqueue_block_editor_assets() {
 	wp_enqueue_style(
         'font-awesome-admin', 
         'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css', 

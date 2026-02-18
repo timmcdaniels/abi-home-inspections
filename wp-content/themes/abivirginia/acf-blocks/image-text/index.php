@@ -6,11 +6,12 @@
 	$image_ratio = get_field( 'image_ratio' );
 	if ( empty( $image_ratio ) ) $image_ratio = 'is-3by2';
 	$heading = get_field( 'heading' );
+	$use_h1 = get_field( 'use_h1_heading' );
 	$text = get_field( 'text' );
 	$button_alignment = get_field( 'button_alignment' );
 	$buttons = get_field( 'buttons' );
 ?>
-	<section class="section">
+	<section class="section image-text-section content">
 		<div class="container" id="<?php echo esc_attr( $block['anchor'] ); ?>">
 			<div class="columns is-vcentered">
 				<?php if ( $image_location === 'Left' && ! empty( $image ) ): ?>
@@ -20,11 +21,17 @@
 					</figure>
 				</div>
 				<?php endif; ?>
-				<div class="column is-6">
-					<h2 class="title is-3"><?php echo $heading; ?></h2>
+				<?php if ( empty( $image ) ): ?>
+					<div class="column is-2"></div>
+				<?php endif; ?>
+				<div class="column <?php if ( empty( $image ) ): ?>is-8<?php else: ?>is-6<?php endif; ?>">
+					<<?php if ( $use_h1 ): ?>h1<?php else: ?>h2<?php endif; ?> class="title is-3"><?php echo $heading; ?></<?php if ( $use_h1 ): ?>h1<?php else: ?>h2<?php endif; ?>>
 					<?php echo $text; ?>
 					<?php abi_buttons( $button_alignment, $buttons ); ?>
 				</div>
+				<?php if ( empty( $image ) ): ?>
+                    <div class="column is-2"></div>
+                <?php endif; ?>
 				<?php if ( $image_location === 'Right' && ! empty( $image ) ): ?>
 				<div class="column is-6">
 					<figure class="<?php if ( get_field( 'use_blue_background' ) ): ?>blue-bg<?php else: ?>image <?php echo $image_ratio; ?><?php endif; ?>">
